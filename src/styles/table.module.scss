@@ -1,0 +1,17 @@
+.table {
+    display:grid;
+    grid-template-columns: repeat(18, 45px);
+    grid-template-rows: repeat(10, 45px);
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.element {
+    border: 0.5px solid black;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
