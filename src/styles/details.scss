@@ -1,0 +1,21 @@
+.main {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 7px;
+    background-color: rgb(144, 198, 246);
+    border-radius: 10px;
+}

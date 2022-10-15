@@ -1,7 +1,7 @@
 .table {
     display:grid;
-    grid-template-columns: repeat(18, 45px);
-    grid-template-rows: repeat(10, 45px);
+    grid-template-columns: repeat(18, 60px);
+    grid-template-rows: repeat(10, 60px);
     justify-content: center;
     align-content: center;
     height: 100vh;
@@ -14,4 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    font-size: 0.5rem;
+    &:hover {
+        cursor: pointer;
+    }
 }
+

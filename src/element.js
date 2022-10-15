@@ -1,8 +1,12 @@
 import React from "react";
 import st from '../src/styles/table.module.scss'
+import { useState } from "react";
+import Details from "./details";
 
 function Element(props) {
 
+    const [active, setActive] = useState(false)
+    
     function whichColor(element) {
         switch (element.category) {
             case 'diatomic nonmetal':
@@ -30,8 +34,21 @@ function Element(props) {
         }
     }
 
+    function exit(){
+        console.log(1)
+        setActive(true)
+    }
+
     return (
-        <div className={st.element} style={{gridColumn:props.element.xpos, gridRow:props.element.ypos, backgroundColor:whichColor(props.element)}}>{props.element.symbol}</div>
+        <div className={st.element} style={{gridColumn:props.element.xpos, gridRow:props.element.ypos, backgroundColor:whichColor(props.element)}}>
+            {props.element.number}<br/>
+            <b>{props.element.symbol}</b>
+            <div>
+                {props.element.name}
+            </div>
+            <button onClick={() => setActive(true)}>Info</button>
+            <Details active={active} setActive={setActive} element={props.element}></Details>
+        </div>
     )
 }
 
