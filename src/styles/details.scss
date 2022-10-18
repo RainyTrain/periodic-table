@@ -5,10 +5,10 @@
     right: 0;
     position: fixed;
     display: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.main.active {
+.active {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,37 @@
 
 .content {
     padding: 7px;
-    background-color: rgb(144, 198, 246);
     border-radius: 10px;
+    width: 40vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 2em;
+    background-color: rgb(247,239,210);
+    cursor: default;
+    
+
+    .element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-row: 1/4;
+
+
+        .symbol {
+            font-size: 4em;
+            font-weight: 700;
+            height: 130px;
+            width: 130px;
+            border: .5px solid;
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
