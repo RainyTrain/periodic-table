@@ -8,5 +8,52 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(237, 250, 186, 0.636);
+    transition: 1s;
+    
 }
+
+.dark {
+    background-color: rgb(52, 50, 66);
+    color: rgb(255, 255, 255);
+}
+
+.bright {
+    background-color: rgba(237, 250, 186, 0.636);
+}
+
+.button {
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 1s;
+
+    span {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(73, 226, 173);
+        position: absolute;
+        left: 3px;
+        transition: all 1s;
+    }
+}
+
+.active{
+    background-color: rgb(73, 226, 173);
+    span {
+        left: calc(100% - 23px);
+        background-color: rgb(102, 102, 102);
+    }
+}
+
+
+
 
