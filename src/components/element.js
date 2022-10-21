@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import st from '../src/styles/element.module.scss'
 import { useState } from "react";
-import Details from "./details";
+import Details from "./components/details";
 
 function Element(props) {
 

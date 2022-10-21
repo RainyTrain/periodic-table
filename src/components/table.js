@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import data from './elements.json'
+import data from '../elements.json'
 import st from '../src/styles/table.module.scss'
 import Element from "./element";
 import {BiMoon} from 'react-icons/bi'
