@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import './styles/details.scss'
+import '../styles/details.scss'
 
 function Details(props) {
 

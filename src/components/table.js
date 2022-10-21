@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import data from '../elements.json'
-import st from '../src/styles/table.module.scss'
-import Element from "./element";
+import st from "../styles/table.module.scss"
+import Element from "../components/element.js";
 import {BiMoon} from 'react-icons/bi'
 import {FiSun} from 'react-icons/fi'
 

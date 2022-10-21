@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import st from '../src/styles/element.module.scss'
+import React from "react";
+import st from '../styles/element.module.scss'
 import { useState } from "react";
-import Details from "./components/details";
+import Details from '../components/details.js'
 
 function Element(props) {
 
