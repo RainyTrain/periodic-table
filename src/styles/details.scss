@@ -20,7 +20,7 @@
     width: 40vw;
     height: 40vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: repeat(6, 1fr);
     font-size: 2em;
     background-color: rgb(247,239,210);
@@ -53,13 +53,14 @@
         align-items:flex-start;
     }
 
-    .classify {
+    .properties {
         grid-column: 2;
         grid-row: 1/7;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 20%;
     }
 
     div {

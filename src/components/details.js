@@ -23,35 +23,35 @@ function Details(props) {
                 </div>
                 <div className='description'>
                      <div>
-                        Series: {props.element.category}
+                        {props.element.period}
                     </div>
                     <div>
-                        Melting point: {melt}
-                        <select onChange={e => setScale(e.target.value)}>
+                        {melt}
+                        <select style={{marginLeft: '15px'}} onChange={e => setScale(e.target.value)}>
                             <option value='kelvin'>Kelvin</option>
                             <option value='celsius'>Celsius</option>
                         </select>
                     </div>
                     <div>
-                        Atomic number: {props.element.number}
+                        {props.element.number}
                     </div>
                     <div>
-                        atomic_mass
+                        {props.element.category}
                     </div>
                     <div>
-                        period
+                        {props.element.atomic_mass}
                     </div>
                     <div>
-                        electron_configuration
+                        {props.element.electron_configuration}
                     </div>
                 </div>
-                <div className='classify'>
-                    <div>1:</div>
-                    <div>2:</div>
-                    <div>3:</div>
-                    <div>4:</div>
-                    <div>5:</div>
-                    <div>6:</div>
+                <div className='properties'>
+                    <div>Period:</div>
+                    <div>Melting point:</div>
+                    <div>Atomic number:</div>
+                    <div>Series:</div>
+                    <div>Atomic mass:</div>
+                    <div>Electron configuration:</div>
                 </div>
             </div>
         </div>
